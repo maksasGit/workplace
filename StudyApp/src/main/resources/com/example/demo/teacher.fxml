@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="510.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.TeacherController">
+   <children>
+      <Label fx:id="userName" text="Александер  Иванов">
+         <VBox.margin>
+            <Insets bottom="10.0" left="15.0" top="10.0" />
+         </VBox.margin>
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <ListView fx:id="studentsList" prefHeight="200.0" prefWidth="200.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <VBox.margin>
+            <Insets bottom="10.0" left="50.0" right="50.0" />
+         </VBox.margin>
+      </ListView>
+      <Label fx:id="studentName">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="10.0" left="250.0" />
+         </VBox.margin>
+      </Label>
+      <TableView fx:id="subjectTable" prefHeight="200.0" prefWidth="200.0">
+         <columns>
+            <TableColumn fx:id="subjectName" prefWidth="150.0" text="Subject" />
+            <TableColumn fx:id="lab1" prefWidth="75.0" text="lab1" />
+            <TableColumn fx:id="lab2" prefWidth="75.0" text="lab2" />
+            <TableColumn fx:id="lab3" prefWidth="75.0" text="lab3" />
+            <TableColumn fx:id="lab4" prefWidth="75.0" text="lab4" />
+            <TableColumn fx:id="lab5" prefWidth="75.0" text="lab5" />
+            <TableColumn fx:id="average" prefWidth="75.0" text="avrage" />
+         </columns>
+      </TableView>
+   </children>
+</VBox>

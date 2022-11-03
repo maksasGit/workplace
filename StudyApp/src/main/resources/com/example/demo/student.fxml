@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="510.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.StudentController">
+   <children>
+      <Label fx:id="userName" text="Maksas Olegovich">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="10.0" left="15.0" top="10.0" />
+         </VBox.margin>
+      </Label>
+      <TableView fx:id="subjectTable" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+            <TableColumn fx:id="subjectName" prefWidth="150.0" text="Subject" />
+            <TableColumn fx:id="lab1" prefWidth="75.0" text="Lab1" />
+            <TableColumn fx:id="lab2" prefWidth="75.0" text="Lab2" />
+            <TableColumn fx:id="lab3" prefWidth="75.0" text="Lab3" />
+            <TableColumn fx:id="lab4" prefWidth="75.0" text="Lab4" />
+          <TableColumn fx:id="lab5" prefWidth="75.0" text="Lab5" />
+          <TableColumn fx:id="average" prefWidth="75.0" text="average" />
+        </columns>
+      </TableView>
+      <Button fx:id="testButton" mnemonicParsing="false" onAction="#test" text="Przejsc test" />
+      <Label fx:id="testLabel" />
+   </children>
+</VBox>
